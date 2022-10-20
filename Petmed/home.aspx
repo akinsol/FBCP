@@ -3,7 +3,7 @@
 
 
 
-    <header class="masthead" style="background-image:url('assets/img/intro-bg.jpg');">
+    <header class="masthead" style="background-image:url('images/dogsss.jpg');">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
