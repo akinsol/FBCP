@@ -83,6 +83,8 @@
     <Content Include="Web.config" />
     <Content Include="home.aspx" />
     <Content Include="custHome.aspx" />
+    <Content Include="ddHome.aspx" />
+    <Content Include="vetHome.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +115,20 @@
     </Compile>
     <Compile Include="CShome.aspx.designer.cs">
       <DependentUpon>CShome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ddHome.aspx.cs">
+      <DependentUpon>ddHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ddHome.aspx.designer.cs">
+      <DependentUpon>ddHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vetHome.aspx.cs">
+      <DependentUpon>vetHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vetHome.aspx.designer.cs">
+      <DependentUpon>vetHome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
