@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdministratorBrowsePlans.aspx" />
+    <Content Include="AdministratorDepartmentUsers.aspx" />
     <Content Include="css\master.css" />
     <Content Include="images\temple-logo.png" />
     <Content Include="Web.config" />
@@ -79,6 +80,13 @@
     </Compile>
     <Compile Include="AdministratorBrowsePlans.aspx.designer.cs">
       <DependentUpon>AdministratorBrowsePlans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorDepartmentUsers.aspx.cs">
+      <DependentUpon>AdministratorDepartmentUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDepartmentUsers.aspx.designer.cs">
+      <DependentUpon>AdministratorDepartmentUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
