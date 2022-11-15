@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -69,18 +69,8 @@
   <ItemGroup>
     <Content Include="AdministratorBrowsePlans.aspx" />
     <Content Include="AdministratorDepartmentUsers.aspx" />
-    <Content Include="AdministratorDueDates.aspx" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\Calender-Button.css" />
-    <Content Include="css\Fully-responsive-table.css" />
-    <Content Include="css\Large-Dropdown-Menu-BS3-LMBS3.css" />
-    <Content Include="css\Large-Dropdown-Menu-BS3.css" />
     <Content Include="css\master.css" />
-    <Content Include="css\Navbar-Dropdown-List-Item.css" />
-    <Content Include="css\navbar-dropdown-multiple-columns.css" />
-    <Content Include="css\Navigation-Menu.css" />
     <Content Include="images\temple-logo.png" />
-    <Content Include="js\bootstrap.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -97,13 +87,6 @@
     </Compile>
     <Compile Include="AdministratorDepartmentUsers.aspx.designer.cs">
       <DependentUpon>AdministratorDepartmentUsers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdministratorDueDates.aspx.cs">
-      <DependentUpon>AdministratorDueDates.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdministratorDueDates.aspx.designer.cs">
-      <DependentUpon>AdministratorDueDates.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
@@ -161,5 +144,4 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
 </Project>
