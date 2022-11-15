@@ -12,6 +12,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="col">
+    <p style="color: var(--bs-white);background: var(--bs-red);padding: 1rem;"><img src="Temple_University_logo.svg.png" style="width: 25%;" /></p>
+</div>
         <div style="display: flex;">
         <div class="sideNavBar" style="margin-bottom: 1rem;margin-left: 1rem;width: 33%;">
             <div class="col sideNavBar" style="background: var(--bs-black);padding: 1rem;">

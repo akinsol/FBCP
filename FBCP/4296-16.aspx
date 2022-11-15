@@ -11,6 +11,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="col">
+    <p style="color: var(--bs-white);background: var(--bs-red);padding: 1rem;"><img src="Temple_University_logo.svg.png" style="width: 25%;" /></p>
+</div>
         <div class="col" style="color: var(--bs-white);background: var(--bs-black);padding-left: 2rem;padding-top: 0.5rem;">
         <p><strong><span style="text-decoration: underline;">Admin Tools</span>&nbsp;| Department users | Browse Plans</strong></p>
     </div>
