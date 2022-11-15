@@ -67,29 +67,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="4296-16.1\assets\bootstrap\css\bootstrap.min.css" />
-    <Content Include="4296-16.1\assets\bootstrap\js\bootstrap.min.js" />
-    <Content Include="4296-16.1\index.html" />
-    <Content Include="4296-17\assets\bootstrap\css\bootstrap.min.css" />
-    <Content Include="4296-17\assets\bootstrap\js\bootstrap.min.js" />
-    <Content Include="4296-17\assets\img\Temple_University_logo.svg.png" />
-    <Content Include="4296-17\index.html" />
+    <Content Include="4296-16-assets\css\bootstrap.min.css" />
+    <Content Include="4296-16-assets\js\bootstrap.min.js" />
+    <Content Include="originalHTML\4296-16.1-html\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="originalHTML\4296-16.1-html\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="originalHTML\4296-16.1-html\index.html" />
+    <Content Include="4296-16.aspx" />
+    <Content Include="4296-17-assets\css\bootstrap.min.css" />
+    <Content Include="4296-17-assets\js\bootstrap.min.js" />
+    <Content Include="4296-17.aspx" />
+    <Content Include="originalHTML\4296-17-html\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="originalHTML\4296-17-html\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="originalHTML\4296-17-html\assets\img\Temple_University_logo.svg.png" />
+    <Content Include="originalHTML\4296-17-html\index.html" />
     <Content Include="4296-9.aspx" />
-    <Content Include="4296-9\assets\bootstrap\css\bootstrap.min.css" />
-    <Content Include="4296-9\assets\bootstrap\js\bootstrap.min.js" />
-    <Content Include="4296-9\assets\css\Simple-Slider-Simple-Slider.css" />
-    <Content Include="4296-9\assets\js\Simple-Slider.js" />
-    <Content Include="4296-9\index.html" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\master.css" />
-    <Content Include="css\Simple-Slider-Simple-Slider.css" />
+    <Content Include="originalHTML\4296-9-html\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="originalHTML\4296-9-html\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="originalHTML\4296-9-html\assets\css\Simple-Slider-Simple-Slider.css" />
+    <Content Include="originalHTML\4296-9-html\assets\js\Simple-Slider.js" />
+    <Content Include="originalHTML\4296-9-html\index.html" />
+    <Content Include="4296-9-assets\css\bootstrap.min.css" />
+    <Content Include="4296-9-assets\css\master.css" />
+    <Content Include="4296-9-assets\css\Simple-Slider-Simple-Slider.css" />
     <Content Include="images\temple-logo.png" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\Simple-Slider.js" />
+    <Content Include="4296-9-assets\js\bootstrap.min.js" />
+    <Content Include="4296-9-assets\js\Simple-Slider.js" />
     <Content Include="sample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="4296-16.aspx.cs">
+      <DependentUpon>4296-16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4296-16.aspx.designer.cs">
+      <DependentUpon>4296-16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4296-17.aspx.cs">
+      <DependentUpon>4296-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4296-17.aspx.designer.cs">
+      <DependentUpon>4296-17.aspx</DependentUpon>
+    </Compile>
     <Compile Include="4296-9.aspx.cs">
       <DependentUpon>4296-9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,7 +144,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="4296-17\assets\css\" />
+    <Folder Include="originalHTML\4296-17-html\assets\css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
