@@ -14,8 +14,11 @@
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: darkred;">
         <div class="container-fluid d-flex justify-content-between min-vw-100">
-            <a class="navbar-brand mx-5" href="#">Home</a>
-             <img class="mx-5" style="height: 75px" src="images/temple-logo.png">
+            <div class = "mx-1">
+                <p class="navbar-brand mx-5 d-inline" href="#">Moira Trapper</p>
+                <button type="button" class="btn btn-dark">Sign Out</button>
+            </div>
+            <img class="mx-5" style="height: 75px" src="images/temple-logo.png">
         </div>
     </nav>
     <form id="form1" runat="server">
@@ -24,10 +27,8 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
-     <footer>
-        <div class="container-fluid d-flex justify-content-start min-vw-100">
-            <img class="mx-5 my-1" style="height: 75px" src="images/temple-logo.png">
-        </div>
+     <footer class="fixed-bottom">
+
     </footer>
 </body>
 </html>
