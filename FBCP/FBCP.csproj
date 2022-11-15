@@ -67,19 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdministratorBrowsePlans.aspx" />
     <Content Include="css\master.css" />
     <Content Include="images\temple-logo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorBrowsePlans.aspx.cs">
-      <DependentUpon>AdministratorBrowsePlans.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdministratorBrowsePlans.aspx.designer.cs">
-      <DependentUpon>AdministratorBrowsePlans.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
