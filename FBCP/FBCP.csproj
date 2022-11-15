@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddingApplications.aspx" />
     <Content Include="AdministratorBrowsePlans.aspx" />
+    <Content Include="css\AddingChecklist.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\FormContentPagebootstrap.css" />
     <Content Include="css\FormStyle.css" />
@@ -76,10 +78,19 @@
     <Content Include="css\untitled.css" />
     <Content Include="DepartmentFormContent.aspx" />
     <Content Include="images\temple-logo.png" />
+    <Content Include="js\AddingApplications.min.js" />
     <Content Include="js\FormContentbootstrap.min.js" />
+    <Content Include="js\MCF.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddingApplications.aspx.cs">
+      <DependentUpon>AddingApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddingApplications.aspx.designer.cs">
+      <DependentUpon>AddingApplications.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorBrowsePlans.aspx.cs">
       <DependentUpon>AdministratorBrowsePlans.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

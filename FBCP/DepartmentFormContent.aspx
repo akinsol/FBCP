@@ -8,6 +8,7 @@
     <title>FormContentWholePage (V2)</title>
     <link rel="stylesheet" href="css/FormContentPagebootstrap.css">
     <link rel="stylesheet" href="css/FormStyle.css">
+
      <style>
          #DepartmentOverview,#MCFIndividuals,#ComplianceBusinessImpact,#Interdependencies,#CommunicationPlan,#SubmissionApproval{
              scroll-margin-top: 100px;
@@ -36,9 +37,10 @@
             <div class="form-check"><input id="formCheck-71" class="form-check-input" type="radio" /><label class="form-check-label" for="formCheck-71">No</label></div>
         </div>
         <div id="MCFIndividuals" class="text-center">
-            <h3 class="text-center d-xxl-flex justify-content-xxl-center text-white FormContentHeader">Mission Critical Functions SUMMARY</h3><button class="btn btn-primary text-center btn-dark p-md-3" type="button">View/Edit Mission Critical Function #1</button>
-            <div class="LineBreak"></div><button class="btn btn-primary btn-dark p-md-3" type="button">View/Edit Mission Critical Function #2</button>
-            <div class="LineBreak"></div><button class="btn btn-primary btn-danger p-md-3" type="button">Add Another Mission Critical Function</button>
+            <h3 class="text-center d-xxl-flex justify-content-xxl-center text-white FormContentHeader">Mission Critical Functions SUMMARY</h3>
+                                         <button class="btn btn-primary text-center btn-dark p-md-3" type="button">View/Edit Mission Critical Function </button>
+            <div class="LineBreak"></div><button class="btn btn-primary btn-dark p-md-3" type="button">View/Edit Mission Critical Function </button>
+            <div class="LineBreak"></div><button id="AddMCF" class="btn btn-primary btn-danger p-md-3" type="button">Add Another Mission Critical Function</button>
         </div>
         <div id="MissionCriticalFunctions" class="overflow-auto">
             <h3 class="text-center d-xxl-flex justify-content-xxl-center text-white FormContentHeader">Mission Critical Functions #1</h3>
@@ -86,7 +88,7 @@
                 <div class="form-check"><input id="formCheck-14" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-14">Encrypted N: Drive</label></div>
                 <div class="form-check"><input id="formCheck-25" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-25">Nelnet Cashiering</label></div>
                 <div class="form-check"><input id="formCheck-24" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-24">ELM</label></div>
-                <div class="form-check"><input id="formCheck-26" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-26">ACS</label></div><button class="btn btn-primary PageTheme ButtonPageTheme" type="button">+ Add New ITS Application</button>
+                <div class="form-check"><input id="formCheck-26" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-26">ACS</label></div><button id="AddITSApp" class="btn btn-primary PageTheme ButtonPageTheme" type="button">+ Add New ITS Application</button>
             </div>
             <div id="CritThirdPartyVendors" class="float-start w-50">
                 <h4>Critical Third Party Vendors (Check all that apply):</h4>
@@ -174,7 +176,7 @@
         </div>
         <div id="SubmissionApproval" style="color: rgb(0,0,0);transform: scale(1.01);background: #ffffff;">
             <h3 class="text-center d-xxl-flex justify-content-xxl-center text-white FormContentHeader">Submit for Approval</h3>
-            <p>Note: Network failure communication would come from an executive level</p>
+            
             <p><strong>Department Head Review</strong><br />Please indicate whether or not you are the head of this department and approve of this plan<br /></p>
             <div class="form-check"><input id="formCheck-64" class="form-check-input" type="radio" /><label class="form-check-label" for="formCheck-64">Yes, I am the head of this department</label></div>
             <div class="form-check"><input id="formCheck-69" class="form-check-input" type="radio" /><label class="form-check-label" for="formCheck-69">No, I am not the head of this department</label></div><label class="form-label">Department Head (Email):</label><input type="email" />
@@ -185,6 +187,8 @@
         </div>
     </div>
          <script src="js/FormContentbootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/MCF.js"></script>
 </body>
 
 
