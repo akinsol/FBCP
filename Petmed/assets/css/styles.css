@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #9e0b00;
+}
+
+img {
+  height: 60px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  background-color: #9e0b00;
+}
+
+img {
+  margin-left: 15px;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  position: fixed;
+  margin-right: 300px;
+}
+
