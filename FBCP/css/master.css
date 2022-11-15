@@ -1,5 +1,6 @@
 ﻿body {
     background-color: wheat;
+    font-family: Arial;
 }
 
 footer {
@@ -11,5 +12,9 @@ footer {
 }
 
 .nav-link {
+    color: white;
+}
+
+#admin-name {
     color: white;
 }
