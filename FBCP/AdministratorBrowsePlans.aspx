@@ -6,7 +6,7 @@
         <div class="collapse navbar-collapse justify-content-between mx-5">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Admin Tools</a>
+                    <a class="nav-link" href="AdministratorDueDates.aspx">Admin Tools</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="AdministratorDepartmentUsers.aspx">Department Users</a>
