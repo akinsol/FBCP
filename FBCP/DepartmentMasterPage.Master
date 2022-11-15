@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DepartmentMasterPage.master.cs" Inherits="FBCP.DepartmentMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="css/MasterPagebootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <!--<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/untitled.css">
+
+    <title>FBCP Department</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #mainNav{
+            margin-bottom:0px;
+            background-color:#9e0b00;
+            height:10%;
+        }
+        #footer{
+            position:fixed;
+            bottom:0;
+            width:100%;
+           
+           margin-top:-10%;
+        }
+        #contact{
+            margin-top:100px;
+        }
+        body{
+            margin-top:20%;
+            background-color:white;
+        }
+        #signOut{
+            margin-top:10px;
+            border-radius: 5px;
+            background: #000000;
+            height:60px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav" style="background: rgb(200,1,1);">
+        <div class="container"><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                               
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <img src="images/temple-logo.png">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" style="color: rgb(255,255,255);font-size: 10px;">Nancy Hinchcliff <br />Payroll & Accounting <br />FY:22</a></li>
+                    <li id="signOut"class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" style="color: rgb(255,255,255);">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+            <!--
+    <footer>
+   <div id="footer" class="text-center text-white copyright py-4">
+    </div>
+    </footer>-->
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+       
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -68,8 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdministratorBrowsePlans.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\FormContentPagebootstrap.css" />
+    <Content Include="css\FormStyle.css" />
     <Content Include="css\master.css" />
+    <Content Include="css\MasterPagebootstrap.min.css" />
+    <Content Include="css\untitled.css" />
+    <Content Include="DepartmentFormContent.aspx" />
     <Content Include="images\temple-logo.png" />
+    <Content Include="js\FormContentbootstrap.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,10 +94,25 @@
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
     </Compile>
+    <Compile Include="DepartmentFormContent.aspx.cs">
+      <DependentUpon>DepartmentFormContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentFormContent.aspx.designer.cs">
+      <DependentUpon>DepartmentFormContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentMasterPage.Master.cs">
+      <DependentUpon>DepartmentMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentMasterPage.Master.designer.cs">
+      <DependentUpon>DepartmentMasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.Master" />
+    <Content Include="DepartmentMasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
