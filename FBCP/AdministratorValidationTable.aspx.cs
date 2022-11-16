@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace FBCP
 {
-    public partial class Default1 : System.Web.UI.MasterPage
+    public partial class AdministratorValidationTable : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -69,8 +69,14 @@
   <ItemGroup>
     <Content Include="AdministratorBrowsePlans.aspx" />
     <Content Include="AdministratorDepartmentUsers.aspx" />
+    <Content Include="AdministratorDueDate.aspx" />
+    <Content Include="AdministratorValidationTable.aspx" />
+    <Content Include="AdministratorViewPlan.aspx" />
     <Content Include="css\master.css" />
+    <Content Include="DepartmentBrowsePlans.aspx" />
+    <Content Include="Form.aspx" />
     <Content Include="images\temple-logo.png" />
+    <Content Include="SignIn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +94,34 @@
     <Compile Include="AdministratorDepartmentUsers.aspx.designer.cs">
       <DependentUpon>AdministratorDepartmentUsers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorDueDate.aspx.cs">
+      <DependentUpon>AdministratorDueDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDueDate.aspx.designer.cs">
+      <DependentUpon>AdministratorDueDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorValidationTable.aspx.cs">
+      <DependentUpon>AdministratorValidationTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorValidationTable.aspx.designer.cs">
+      <DependentUpon>AdministratorValidationTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorViewPlan.aspx.cs">
+      <DependentUpon>AdministratorViewPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorViewPlan.aspx.designer.cs">
+      <DependentUpon>AdministratorViewPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.Master.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator.Master.designer.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
+    </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,9 +129,39 @@
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
     </Compile>
+    <Compile Include="Department.Master.cs">
+      <DependentUpon>Department.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department.Master.designer.cs">
+      <DependentUpon>Department.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentBrowsePlans.aspx.cs">
+      <DependentUpon>DepartmentBrowsePlans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentBrowsePlans.aspx.designer.cs">
+      <DependentUpon>DepartmentBrowsePlans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrator.Master" />
+    <Content Include="Department.Master" />
     <Content Include="Default.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
