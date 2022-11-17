@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="Petmed.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="WebForm11.aspx.cs" Inherits="Petmed.WebForm11" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 <head>
@@ -14,11 +14,22 @@
             margin-top:100px;
         }
         .holder{
-            padding:70px;
+            padding:20px;
+        }
+        .holder2{
+            padding:15px;
+        }
+        #carryOver{
+            display:block;
+            margin-right:auto;
+            margin-left:auto;
+            margin-top:15px;
+            background-color:black;
         }
     </style>
     <div id="deptover">
           <h1 class="text-white bg-dark">PAYROLL MANAGEMENT 2022</h1>
+         <a class="btn btn-primary" role="button" href="WebForm7.aspx"style="background-color:white; margin-left:15px;"><strong style="color:black;">&lt;</strong><strong style="color:black;">Back</strong></a>
     <div class="accordion" role="tablist" id="EntireFormContent" style="padding-left:50px; padding-right:50px;">
         <div class="accordion-item" id="DepartmentOverview">
             <h2 class="accordion-header" role="tab"><button class="accordion-button text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-1" aria-expanded="true" aria-controls="EntireFormContent .item-1">Department Overview</button></h2>
@@ -35,6 +46,7 @@
                         <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-70"><label class="form-check-label" for="formCheck-70">Yes</label></div>
                         <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-71"><label class="form-check-label" for="formCheck-71">No</label></div>
                     </div>
+                    <div class ="holder">
                     <div class="accordion" role="tablist" id="KeyStakeholderSection">
                         <div class="accordion-item">
                             <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#KeyStakeholderSection .item-1" aria-expanded="false" aria-controls="KeyStakeholderSection .item-1">Key Stakeholder</button></h2>
@@ -96,15 +108,23 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        <div class =" holder">
                     </div><button class="btn btn-primary" type="button" style="background: var(--bs-accordion-btn-color);">Add Stakeholder</button>
+
                 </div>
+                    </div>
             </div>
         </div>
         <div class="accordion-item" id="MissionCriticalFunction">
             <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-2" aria-expanded="false" aria-controls="EntireFormContent .item-2">Mission Critical Functions</button></h2>
             <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#EntireFormContent">
                 <div class="accordion-body">
-                    <p class="mb-0">Section For Mission Critical Functions</p><button class="btn btn-primary" type="button">Add New Mission Critical Function</button>
+                    
+                    <p class="mb-0">Section For Mission Critical Functions</p>
+                    <div class ="holder"><button class="btn btn-primary" type="button">Add New Mission Critical Function</button>
+                        </div>
+                    <div class="holder">
                     <div class="accordion" role="tablist" id="MCFSubsection">
                         <div class="accordion-item">
                             <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MCFSubsection .item-1" aria-expanded="false" aria-controls="MCFSubsection .item-1">Mission Critical Function 1</button></h2>
@@ -256,6 +276,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="accordion-item" id="ComplianceBusinessImpactFactor">
             <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-3" aria-expanded="false" aria-controls="EntireFormContent .item-3">Compliance and Business Impact Factors</button></h2>
             <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#EntireFormContent">
@@ -285,7 +306,9 @@
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-54"><label class="form-check-label" for="formCheck-54">Hacking / Phishing</label></div><button class="btn btn-primary PageTheme ButtonPageTheme" type="button">+ Add New Information Security and Integrity Factor</button>
                         </div>
                         <div class="ClearFloater" style="clear:both;"></div>
+                        <div class =" holder">
                         <div class="float-start w-50" id="section3" style="position: relative;">
+
                             <h5>Finance and Accounting: Please check all that apply</h5>
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-56"><label class="form-check-label" for="formCheck-56">Treasury and Banking (Account info, access)</label></div>
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-58"><label class="form-check-label" for="formCheck-58">Financial statement integrity (based on systems, quality of inputs)</label></div>
@@ -300,6 +323,7 @@
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-65"><label class="form-check-label" for="formCheck-65">Audits</label></div>
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-68"><label class="form-check-label" for="formCheck-68">Grant accounting</label></div><button class="btn btn-primary PageTheme ButtonPageTheme" type="button">+ Add New Finance and Accounting Factor</button>
                         </div>
+                            </div>
                         <div class="float-start w-50" id="section4" style="position: relative;">
                             <h5 class="d-inline-block">Impact to Service Excellence: Please rate impact of disruption to customer service<input class="form-range w-50" type="range" min="1" max="5"></h5>
                         </div>
@@ -314,13 +338,29 @@
                     <div id="Interdependencies-1" class="overflow-auto">
                         <div id="ClearFloater-3"></div>
                         <div class="float-start MCFContainer w-50">
+                            
                             <h1>Internal Dependencies</h1>
-                            <h4>#1</h4><input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200);display: block;"><button class="btn btn-primary DependencySave" type="button">Save</button><button class="btn btn-primary DependencyRemove" type="button"><span style="text-decoration: underline;">Remove</span></button><button class="btn btn-primary DependencyAdd" type="button" style="display: block;">+ Add New Internal Dependency</button>
-                        </div>
+                            <h4>#1</h4><input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200);display: block;">
+                            <button class="btn btn-primary DependencySave" type="button" style="margin-top:10px;">Save</button>
+                                <button class="btn btn-primary DependencyRemove" type="button"style="margin-top:10px;">
+                                <span style="text-decoration: underline;">Remove</span>
+
+                            </button>
+                                <button class="btn btn-primary DependencyAdd" type="button" style="display: block; margin-top:10px;">+ Add New Internal Dependency</button>
+                       
+                            </div>
                         <div class="float-start MCFContainer w-50">
+                            
                             <h1>External Dependencies</h1>
-                            <h4>#1</h4><input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200);display: block;"><button class="btn btn-primary DependencySave" type="button">Save</button><button class="btn btn-primary DependencyRemove" type="button"><span style="text-decoration: underline;">Remove</span></button><button class="btn btn-primary DependencyAdd" type="button" style="display: block;">+ Add New External Dependency</button>
-                        </div>
+                            <h4>#1</h4><input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200);display: block;">
+                                <button class="btn btn-primary DependencySave" type="button"style="margin-top:10px;">Save</button>
+                                <button class="btn btn-primary DependencyRemove" type="button"style="margin-top:10px;">
+                                    <span style="text-decoration: underline;">Remove</span>
+
+                                </button>
+                                <button class="btn btn-primary DependencyAdd" type="button" style="display: block; margin-top:10px;">+ Add New External Dependency</button>
+                       
+                            </div>
                         <div id="ClearFloater-5"></div>
                     </div>
                 </div>
@@ -362,6 +402,20 @@
         </div>
     </div>
     </div>
+        <div style="display: flex;">
+        <div class="mainContent" style="width: 100%;">
+            <div class="mainContent" style="padding: 1rem;">
+            
+                <p style="margin-bottom: 0;"><strong>Approval Status:</strong></p>
+                <p style="margin-bottom: 1rem;">Pending Administrator Approval</p>
+                <div class="form-check" style="margin-left: 1rem;"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Approve Plan</label></div>
+                <div class="form-check" style="margin-bottom: 16px;margin-left: 1rem;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="margin-bottom: 1rem;">Reject Plan</label></div>
+               
+                <p>Comments</p><input type="text" style="width: 25rem;height: 10rem;">
+                <div class="divSubmit" style="width: 25rem;"><button class="btn btn-primary" type="button" style="background: var(--bs-black);margin: 1rem;">Submit</button></div>
+            </div>
+        </div>
+    </div>
 
     <script src="formcontent/assets/bootstrap/js/bootstrap.min.js"></script>
 
@@ -372,3 +426,4 @@
 
 
 </asp:Content>
+

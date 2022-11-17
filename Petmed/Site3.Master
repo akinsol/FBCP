@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Petmed.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="Petmed.Site3" %>
 
 <!DOCTYPE html>
 
@@ -43,8 +43,7 @@
         <div class="container"><img src="assets/img/Temple_University_logo.svg.png"><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" style="color: rgb(255,255,255);font-size: 10px;font-family: Arial;">Nancy Hinchcliff <br />Payroll & Accounting <br />FY:22</a></li>
-                    <li id="signOut"class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="home.aspx" style="color: rgb(255,255,255);font-family: Arial;">Sign Out</a></li>
+
                 </ul>
             </div>
         </div>

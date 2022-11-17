@@ -1,0 +1,53 @@
+#ClearFloater {
+  clear: both;
+}
+
+#ClearFloater-2 {
+  clear: both;
+}
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#SaveBtn {
+  margin-left: 40%;
+  margin-top: 2%;
+  background-color: #4E1919;
+}
+
+.ButtonPageTheme {
+  background-color: black;
+}
+
+#ClearFloater-3 {
+  clear: both;
+}
+
+.FormContentHeader {
+  background-color: black;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+  font-size: 250%;
+}
+
+.DependencySave {
+  background-color: black;
+}
+
+.DependencyRemove {
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+.DependencyAdd {
+  background-color: white;
+  color: black;
+}
+
+.MonthOrganize {
+  width: 10%;
+}
+

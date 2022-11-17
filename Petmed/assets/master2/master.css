@@ -1,0 +1,20 @@
+﻿body {
+    background-color: wheat;
+    font-family: Arial;
+}
+
+footer {
+    background-color: darkred;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+#admin-name {
+    color: white;
+}

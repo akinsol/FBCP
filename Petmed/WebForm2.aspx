@@ -16,6 +16,9 @@
         .bolded{
             font-weight:bold;
         }
+        a{
+
+        }
     </style>
 
      <div id="landing" class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
@@ -45,7 +48,7 @@
                     <td>02/28/2022</td>
                     <td>Nancy Hinchcliff</td>
                     <td>03/03/2022</td>
-                    <td style="width: 198.172px;"><button class="btn btn-primary" type="button" style="color: var(--bs-white);background: var(--bs-btn-disabled-color);border-width: 0px;">Edit</button></td>
+                    <td style="width: 198.172px;"><button class="btn btn-primary" type="button" style="color: var(--bs-white);background: var(--bs-btn-disabled-color);border-width: 0px;"> <a href="WebForm6.aspx" style="color:white;">Edit</a></button></td>
                 </tr>
                 <tr>
                     <td class =" bolded">2021</td>
@@ -53,7 +56,7 @@
                     <td>03/01/2021</td>
                     <td>Nancy Hinchcliff</td>
                     <td>03/03/2021</td>
-                    <td><button class="btn btn-primary" type="button" style="border-width: 0px;background: var(--bs-btn-disabled-color);">View</button><button class="btn btn-primary" type="button" style="border-width: 0px;background: var(--bs-btn-disabled-color);">Export</button></td>
+                    <td><button class="btn btn-primary" type="button" style="border-width: 0px;background: var(--bs-btn-disabled-color);"> <a href="WebForm10.aspx" style="color:white;">View</a></button><button class="btn btn-primary" type="button" style="border-width: 0px;background: var(--bs-btn-disabled-color);">Export</button></td>
                 </tr>
             </tbody>
         </table>
