@@ -2,21 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <nav id="admin-nav" class="navbar navbar-expand-lg" style="background-color: #000000;">
-        <div class="collapse navbar-collapse justify-content-between mx-5">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Admin Tools</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="AdministratorDepartmentUsers.aspx">Department Users</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="AdministratorBrowsePlans.aspx" aria-selected="true">Browse Plans</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <div class="container m-5">
         <div class="row">
             <div class="col-3">
@@ -69,7 +54,7 @@
                 <td>02/28/2022</td>
                 <td>Nancy Hinchcliff</td>
                 <td>03/08/2022</td>
-                <td><button type="button" class="btn btn-dark">View</button></td>
+                <td><a href="AdministratorViewPlan.aspx" class="btn btn-dark">View</a></td>
             </tr>
             <tr>
                 <th scope="row">Payroll Management</th>

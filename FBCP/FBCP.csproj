@@ -69,8 +69,7 @@
   <ItemGroup>
     <Content Include="AdministratorBrowsePlans.aspx" />
     <Content Include="AdministratorDepartmentUsers.aspx" />
-    <Content Include="AdministratorDueDate.aspx" />
-    <Content Include="AdministratorValidationTable.aspx" />
+    <Content Include="AdministratorTools.aspx" />
     <Content Include="AdministratorViewPlan.aspx" />
     <Content Include="css\master.css" />
     <Content Include="DepartmentBrowsePlans.aspx" />
@@ -94,19 +93,12 @@
     <Compile Include="AdministratorDepartmentUsers.aspx.designer.cs">
       <DependentUpon>AdministratorDepartmentUsers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdministratorDueDate.aspx.cs">
-      <DependentUpon>AdministratorDueDate.aspx</DependentUpon>
+    <Compile Include="AdministratorTools.aspx.cs">
+      <DependentUpon>AdministratorTools.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorDueDate.aspx.designer.cs">
-      <DependentUpon>AdministratorDueDate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdministratorValidationTable.aspx.cs">
-      <DependentUpon>AdministratorValidationTable.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdministratorValidationTable.aspx.designer.cs">
-      <DependentUpon>AdministratorValidationTable.aspx</DependentUpon>
+    <Compile Include="AdministratorTools.aspx.designer.cs">
+      <DependentUpon>AdministratorTools.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorViewPlan.aspx.cs">
       <DependentUpon>AdministratorViewPlan.aspx</DependentUpon>
