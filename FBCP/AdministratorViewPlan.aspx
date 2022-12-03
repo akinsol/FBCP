@@ -781,7 +781,7 @@
                 <div class="form-check" style="margin-left: 1rem;">
                     <input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Approve Plan</label></div>
                 <div class="form-check" style="margin-bottom: 16px; margin-left: 1rem;">
-                    <input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="margin-bottom: 1rem;">Reject Plan</label></div>
+                    <input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="margin-bottom: 1rem;">Send Back for Revision</label></div>
 
                 <p>Comments</p>
                 <input type="text" style="width: 25rem; height: 10rem;">

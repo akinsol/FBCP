@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container m-5">
+    <div class="container my-5">
         <div class="row">
             <div class="col-3">
                 <label for="select-department">Select Department</label>
@@ -67,7 +67,7 @@
                 </table>
             </div>
             <div class="col-3">
-                <div class="container m-5">
+                <div class="container my-5">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Please enter a Temple University Email.</div>
@@ -77,3 +77,4 @@
         </div>
     </div>
 </asp:Content>
+
