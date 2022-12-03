@@ -71,6 +71,7 @@
     <Content Include="AdministratorDepartmentUsers.aspx" />
     <Content Include="AdministratorTools.aspx" />
     <Content Include="AdministratorViewPlan.aspx" />
+    <Content Include="CompletedForm.aspx" />
     <Content Include="css\master.css" />
     <Content Include="DepartmentBrowsePlans.aspx" />
     <Content Include="Form.aspx" />
@@ -113,6 +114,13 @@
     </Compile>
     <Compile Include="Administrator.Master.designer.cs">
       <DependentUpon>Administrator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedForm.aspx.cs">
+      <DependentUpon>CompletedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompletedForm.aspx.designer.cs">
+      <DependentUpon>CompletedForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>

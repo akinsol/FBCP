@@ -38,7 +38,7 @@
                             <option value="4">ITS Applications</option>
                             <option value="1">Information Security and Integrity</option>
                             <option value="2">Finance and Accounting</option>
-                            <option value="3">Regulatoryy/Contract/Policy/Employment</option>
+                            <option value="3">Regulatory/Contract/Policy/Employment</option>
                         </select>
                     </div>
                     <p>Add Value</p>
@@ -93,7 +93,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>
