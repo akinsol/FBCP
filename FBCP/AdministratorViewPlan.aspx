@@ -3,6 +3,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        var btnState = 1;
+        function activated() {
+            $('#accordion .collapse').collapse('show');
+            //alert("activated function from JS"); 
+            if (btnState == 1) {
+                //alert("Open Whole Accordion");
+                btnState = 2;
+                $('.accordionshowhideall').collapse('show');
+                $("#ShowAllBtn").html("Hide All");
+            } else if (btnState == 2) {
+                //alert("Close Accordion");
+                btnState = 1;
+                $('.accordionshowhideall').collapse('hide');
+                $("#ShowAllBtn").html("Show All");
+            }
+        }
+    </script>
     <nav id="admin-nav" class="navbar navbar-expand-lg" style="background-color: white;">
         <div class="justify-content-start">
             <p style="color: black;" class="mx-5 d-inline">Payroll Management 2022</p>
@@ -10,11 +29,14 @@
     </nav>
     <div id="deptover">
         <a class="btn mx-5" style="background-color: transparent;" href="AdministratorBrowsePlans.aspx"><strong style="color: black;">&lt;</strong><strong style="color: black;">Back</strong></a>
+        <br />
+        <button id="ShowAllBtn" type="button" class="btn btn-secondary" style="margin-left: 50%; background-color: white; color: black;" onclick="activated()" data-toggle="collapse" data-target=".multi-collapse">Show All</button>
+        <br />
         <div class="accordion mx-5" role="tablist" id="EntireFormContent">
             <div class="accordion-item" id="DepartmentOverview">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-1" aria-expanded="true" aria-controls="EntireFormContent .item-1">Department Overview</button></h1>
-                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse show item-1 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <div class="accordion-body">
                         <div id="DepartmentOverview-1">
                             <nav class="navbar navbar-expand-lg my-2" style="background-color: lightgray;">
@@ -52,98 +74,38 @@
                                 <h5 class="mx-3 d-inline">Key Stakeholders</h5>
                             </div>
                         </nav>
-                        <div class="holder">
-                            <div class="accordion" role="tablist" id="KeyStakeholderSection">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" role="tab">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#KeyStakeholderSection .item-1" aria-expanded="false" aria-controls="KeyStakeholderSection .item-1">Key Stakeholder</button></h2>
-                                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#KeyStakeholderSection">
-                                        <div class="accordion-body">
-                                            <section class="position-relative py-4 py-xl-5">
-                                                <div class="container position-relative">
-                                                    <div class="row d-flex justify-content-center">
-                                                        <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                                                            <div class="card mb-5">
-                                                                <div class="card-body p-sm-5">
-                                                                    <form method="post">
-                                                                        <div class="mb-3">
-                                                                            <h6>First Name</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Nancy">
-                                                                            <h6>Last Name</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Hinchliff">
-                                                                            <h6>Office Phone</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="215-370-1788">
-                                                                            <h6>Email</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="nancy.hinchcliff@temple.edu">
-                                                                            <h6>Title</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Assistant Director, Data Management">
-                                                                        </div>
-                                                                        <div class="mb-3"></div>
-                                                                        <div>
-                                                                            <button class="btn btn-primary d-block w-100" type="submit" style="background: var(--bs-accordion-color); border-width: 0px;">Confirm </button>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" role="tab">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#KeyStakeholderSection .item-2" aria-expanded="false" aria-controls="KeyStakeholderSection .item-2">Key Stakeholder</button></h2>
-                                    <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#KeyStakeholderSection">
-                                        <div class="accordion-body">
-                                            <section class="position-relative py-4 py-xl-5">
-                                                <div class="container position-relative">
-                                                    <div class="row d-flex justify-content-center">
-                                                        <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                                                            <div class="card mb-5">
-                                                                <div class="card-body p-sm-5">
-                                                                    <form method="post">
-                                                                        <div class="mb-3">
-                                                                            <h6>First Name</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="First Name">
-                                                                            <h6>Last Name</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Last Name">
-                                                                            <h6>Office Phone</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Phone Number">
-                                                                            <h6>Email</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Email">
-                                                                            <h6>Title</h6>
-                                                                            <input class="form-control" type="text" name="name" placeholder="Role">
-                                                                        </div>
-                                                                        <div class="mb-3"></div>
-                                                                        <div>
-                                                                            <button class="btn btn-primary d-block w-100" type="submit" style="background: var(--bs-accordion-color); border-width: 0px;">Confirm </button>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <h6>First Name</h6>
+                                <input class="form-control" type="text" name="name" placeholder="Nancy">
                             </div>
-                            <div class=" holder">
+                            <div class="col">
+                                <h6>Last Name</h6>
+                                <input class="form-control" type="text" name="name" placeholder="Hinchliff">
                             </div>
-                            <button class="btn btn-secondary">Add Stakeholder</button>
-
+                            <div class="col">
+                                <h6>Office Phone</h6>
+                                <input class="form-control" type="text" name="name" placeholder="215-370-1788">
+                            </div>
+                            <div class="col">
+                                <h6>Email</h6>
+                                <input class="form-control" type="text" name="name" placeholder="nancy.hinchcliff@temple.edu">
+                            </div>
+                            <div class="col">
+                                <h6>Title</h6>
+                                <input class="form-control" type="text" name="name" placeholder="Assistant Director, Data Management">
+                            </div>
                         </div>
+                        <div class="mb-3"></div>
+                        <button class="btn btn-secondary d-block">Add Stakeholder</button>
+                        <button type="button" class="btn btn-dark my-4 d-block">Save</button>
                     </div>
-                    <button type="button" class="btn btn-dark mx-4">Save</button>
                 </div>
             </div>
             <div class="accordion-item" id="MissionCriticalFunction">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-2" aria-expanded="false" aria-controls="EntireFormContent .item-2">Mission Critical Functions</button></h1>
-                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse item-2 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <nav class="navbar navbar-expand-lg" style="background-color: lightgray;">
                         <div class="justify-content-start">
                             <h5 class="mx-3 d-inline">Edit Mission Critical Functions</h5>
@@ -166,8 +128,31 @@
                                                     </div>
                                                 </nav>
                                                 <div class="float-end w-50" id="CritTimePeriod-1">
-                                                    <p>Person Responsible (Email):</p>
-                                                    <input class="d-block border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);">
+                                                    <p>Person Responsible:</p>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">First Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">Last Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">Email:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
                                                     <div class="row my-3"></div>
                                                     <p>Select All Time Periods Critical To This Function</p>
                                                     <div class="row">
@@ -362,8 +347,31 @@
                                                     </div>
                                                 </nav>
                                                 <div class="float-end w-50" id="CritTimePeriod-1">
-                                                    <p>Person Responsible (Email):</p>
-                                                    <input class="d-block border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);">
+                                                    <p>Person Responsible:</p>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">First Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">Last Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <p class="d-inline">Email:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
                                                     <div class="row my-3"></div>
                                                     <p>Select All Time Periods Critical To This Function</p>
                                                     <div class="row">
@@ -552,7 +560,7 @@
             <div class="accordion-item" id="ComplianceBusinessImpactFactor">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-3" aria-expanded="false" aria-controls="EntireFormContent .item-3">Compliance and Business Impact Factors</button></h1>
-                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse item-3 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <div class="accordion-body">
                         <nav class="navbar navbar-expand-lg my-3" style="background-color: lightgray;">
                             <div class="justify-content-start">
@@ -690,40 +698,40 @@
             <div class="accordion-item" id="Interdependencies">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-4" aria-expanded="false" aria-controls="EntireFormContent .item-4">Interdependencies</button></h1>
-                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse item-4 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <nav class="navbar navbar-expand-lg" style="background-color: lightgray;">
                         <div class="justify-content-start">
                             <h5 class="mx-3 d-inline">Interdependencies</h5>
                         </div>
                     </nav>
                     <div class="accordion-body">
+                        <h5>Please identify any other departments with whom you work to perform an MCF.</h5>
                         <div id="Interdependencies-1" class="overflow-auto">
-                            <div id="ClearFloater-3"></div>
-                            <div class="float-start MCFContainer w-50">
-                                <h6>Internal Dependencies</h6>
-                                <h7>#1</h7>
-                                <input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200); display: block;">
-                                <button class="btn btn-secondary DependencySave" type="button" style="margin-top: 10px;">Add</button>
-                                <button class="btn btn-light DependencyRemove" type="button" style="margin-top: 10px;">
-                                    <span style="text-decoration: underline;">Remove</span>
+                            <div class="row">
+                                <div class="col">
+                                    <h6>Internal Dependencies</h6>
+                                    <h7>#1</h7>
+                                    <input type="text" class="border-5 bg-gradient w-50 mb-1" placeholder="Title" style="background: var(--bs-gray-200); display: block;">
+                                    <textarea class="d-block w-50" placeholder="Description"></textarea>
+                                    <button class="btn btn-secondary DependencySave" type="button" style="margin-top: 10px;">Add</button>
+                                    <button class="btn btn-light DependencyRemove" type="button" style="margin-top: 10px;">
+                                        <span style="text-decoration: underline;">Remove</span>
 
-                                </button>
-                                <button class="btn btn-secondary DependencyAdd" type="button" style="display: block; margin-top: 10px;">+ Add New</button>
-
+                                    </button>
+                                    <button class="btn btn-secondary DependencyAdd" type="button" style="display: block; margin-top: 10px;">+ Add New</button>
+                                </div>
+                                <div class="col">
+                                    <h6>External Dependencies</h6>
+                                    <h7>#1</h7>
+                                    <input type="text" class="border-5 bg-gradient w-50 mb-1" placeholder="Title" style="background: var(--bs-gray-200); display: block;">
+                                    <textarea class="d-block w-50" placeholder="Description"></textarea>
+                                    <button class="btn btn-secondary DependencySave" type="button" style="margin-top: 10px;">Add</button>
+                                    <button class="btn btn-light DependencyRemove" type="button" style="margin-top: 10px;">
+                                        <span style="text-decoration: underline;">Remove</span>
+                                    </button>
+                                    <button class="btn btn-secondary DependencyAdd" type="button" style="display: block; margin-top: 10px;">+ Add New</button>
+                                </div>
                             </div>
-                            <div class="float-start MCFContainer w-50">
-                                <h6>External Dependencies</h6>
-                                <h7>#1</h7>
-                                <input type="text" class="border-5 bg-gradient" style="background: var(--bs-gray-200); display: block;">
-                                <button class="btn btn-secondary DependencySave" type="button" style="margin-top: 10px;">Add</button>
-                                <button class="btn btn-light DependencyRemove" type="button" style="margin-top: 10px;">
-                                    <span style="text-decoration: underline;">Remove</span>
-
-                                </button>
-                                <button class="btn btn-secondary DependencyAdd" type="button" style="display: block; margin-top: 10px;">+ Add New</button>
-
-                            </div>
-                            <div id="ClearFloater-5"></div>
                         </div>
                         <button type="button" class="btn btn-dark my-3">Save</button>
                     </div>
@@ -732,7 +740,7 @@
             <div class="accordion-item" id="CommunicationPlan">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-5" aria-expanded="false" aria-controls="EntireFormContent .item-5">Communication Plan</button></h1>
-                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse item-5 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <nav class="navbar navbar-expand-lg" style="background-color: lightgray;">
                         <div class="justify-content-start">
                             <h5 class="mx-3 d-inline">Communication Plan</h5>
@@ -765,31 +773,34 @@
             <div class="accordion-item" id="SubmissionApproval">
                 <h1 class="accordion-header" role="tab">
                     <button class="accordion-button collapsed text-white bg-dark CategorySection" type="button" data-bs-toggle="collapse" data-bs-target="#EntireFormContent .item-6" aria-expanded="false" aria-controls="EntireFormContent .item-6">Approval</button></h1>
-                <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#EntireFormContent">
+                <div class="accordion-collapse collapse item-6 accordionshowhideall" role="tabpanel" data-bs-parent="#EntireFormContent">
                     <nav class="navbar navbar-expand-lg" style="background-color: lightgray;">
                         <div class="justify-content-start">
                             <h5 class="mx-3 d-inline">Administrator Review</h5>
                         </div>
                     </nav>
                     <div class="accordion-body">
-                            <div style="display: flex;">
-        <div class="mainContent" style="width: 100%;">
-            <div class="mainContent" style="padding: 1rem;">
+                        <div style="display: flex;">
+                            <div class="mainContent" style="width: 100%;">
+                                <div class="mainContent" style="padding: 1rem;">
 
-                <p style="margin-bottom: 0;"><strong>Approval Status:</strong></p>
-                <p style="margin-bottom: 1rem;">Pending Administrator Approval</p>
-                <div class="form-check" style="margin-left: 1rem;">
-                    <input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Approve Plan</label></div>
-                <div class="form-check" style="margin-bottom: 16px; margin-left: 1rem;">
-                    <input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="margin-bottom: 1rem;">Send Back for Revision</label></div>
+                                    <p style="margin-bottom: 0;"><strong>Approval Status:</strong></p>
+                                    <p style="margin-bottom: 1rem;">Pending Administrator Approval</p>
+                                    <div class="form-check" style="margin-left: 1rem;">
+                                        <input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Approve Plan</label>
+                                    </div>
+                                    <div class="form-check" style="margin-bottom: 16px; margin-left: 1rem;">
+                                        <input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="margin-bottom: 1rem;">Send Back for Revision</label>
+                                    </div>
 
-                <p>Comments</p>
-                <input type="text" style="width: 25rem; height: 10rem;">
-                <div class="divSubmit" style="width: 25rem;">
-                    <button class="btn btn-primary" type="button" style="background: var(--bs-black); margin: 1rem;">Submit</button></div>
-            </div>
-        </div>
-    </div>
+                                    <p>Comments</p>
+                                    <input type="text" style="width: 25rem; height: 10rem;">
+                                    <div class="divSubmit" style="width: 25rem;">
+                                        <button class="btn btn-primary" type="button" style="background: var(--bs-black); margin: 1rem;">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

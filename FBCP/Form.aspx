@@ -367,8 +367,31 @@
                                                 </div>
                                             </nav>
                                             <div class="float-end w-50" id="CritTimePeriod-1">
-                                                <p>Person Responsible (Email):</p>
-                                                <input class="d-block border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);">
+                                                <p>Person Responsible:</p>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                           <p class="d-inline">First Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                           <p class="d-inline">Last Name:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                         <div class="col-2">
+                                                           <p class="d-inline">Email:</p>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="border-5 bg-gradient" type="text" style="background: var(--bs-gray-200);" />
+                                                        </div>                                    
+                                                    </div>
                                                 <div class="row my-3"></div>
                                                 <p>Select All Time Periods Critical To This Function</p>
                                                 <div class="row">
