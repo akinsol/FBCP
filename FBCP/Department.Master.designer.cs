@@ -11,7 +11,7 @@ namespace FBCP
 {
 
 
-    public partial class Default1
+    public partial class Department
     {
 
         /// <summary>
